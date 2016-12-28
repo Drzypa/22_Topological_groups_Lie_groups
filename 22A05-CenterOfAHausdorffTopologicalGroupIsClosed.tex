@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CenterOfAHausdorffTopologicalGroupIsClosed}
+\pmcreated{2013-03-22 18:01:48}
+\pmmodified{2013-03-22 18:01:48}
+\pmowner{asteroid}{17536}
+\pmmodifier{asteroid}{17536}
+\pmtitle{center of a Hausdorff topological group is closed}
+\pmrecord{4}{40548}
+\pmprivacy{1}
+\pmauthor{asteroid}{17536}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{22A05}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+{\bf Theorem -} Let $G$ be a Hausdorff topological group. Then the center of $G$ is a closed normal subgroup.
+
+$\,$
+
+{\bf \emph{Proof:}} Let $Z$ be the center of $G$. We know that $Z$ is a normal subgroup of $G$. Let us see that it is closed.
+
+Let $s \in \overline{Z}$, the closure of $Z$. There exists a net $\{s_{\lambda}\}$ in $Z$ converging to $s$. Then, for every $g \in G$, we have that
+\begin{itemize}
+\item $gs_{\lambda} \longrightarrow gs$
+\item $s_{\lambda}g \longrightarrow sg$
+\end{itemize}
+But since $Z$ is the center of $G$ we have that $gs_{\lambda} = s_{\lambda}g$, and as $G$ is Hausdorff one must have $sg=gs$. This implies that $s \in Z$, i.e. $Z$ is closed. $\square$
+%%%%%
+%%%%%
+\end{document}

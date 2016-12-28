@@ -1,0 +1,126 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{O2}
+\pmcreated{2013-03-22 17:57:38}
+\pmmodified{2013-03-22 17:57:38}
+\pmowner{rspuzio}{6075}
+\pmmodifier{rspuzio}{6075}
+\pmtitle{O(2)}
+\pmrecord{8}{40461}
+\pmprivacy{1}
+\pmauthor{rspuzio}{6075}
+\pmtype{Example}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{22E10}
+\pmclassification{msc}{22E15}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+\textbf{still being written}
+
+An elementary example of a Lie group is afforded by O(2),
+the orthogonal group in two dimensions.  This is the set
+of transformations of the plane which fix the origin and 
+preserve the distance between points.  It may be shown 
+that a transform has this property if and only if it is of
+the form
+\[
+ \begin{pmatrix} x \\ y \end{pmatrix} \mapsto 
+ M \begin{pmatrix} x \\ y \end{pmatrix} ,
+\]
+where $M$ is a $2 \times 2$ matrix such that $M^T M = I$.
+(Such a matrix is called orthogonal.)
+
+It is easy enough to check that this is a group.  To see
+that it is a Lie group, we first need to make sure that it
+is a manifold.  To that end, we will parameterize it.
+Calling the entries of the matrix $a,b,c,d$, the condition
+ becomes
+\[
+ \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} =
+ \begin{pmatrix} a & b \\ c & d \end{pmatrix}^T
+ \begin{pmatrix} a & b \\ c & d \end{pmatrix} =
+ \begin{pmatrix} a^2 + c^2 & ab + cd \\
+       ab + cd & b^2 + d^2 \end{pmatrix}
+\]
+which is equivalent to the following system of equations:
+\begin{align*}
+ a^2 + c^2 &= 1 \\
+ ab + cd &= 0 \\
+ b^2 + d^2 &= 1
+\end{align*}
+The first of these equations can be solved by introducing a
+parameter $\theta$ and writing $a = \cos \theta$ and $c =
+\sin \theta$.  Then the second equation becomes $b \cos
+\theta + d \sin \theta = 0$, which can be solved by 
+introducing a parameter $r$:
+\begin{align*}
+ b &= - r \sin \theta \\
+ d &= r \cos \theta
+\end{align*}
+Substituting this into the third equation results in $r^2 = 1$,
+so $r = -1$ or $r = +1$.  This means we have two matrices for
+each value of $\theta$:
+\[
+ \begin{pmatrix} \cos \theta & - \sin \theta \\
+                 \sin \theta &   \cos \theta
+ \end{pmatrix} \qquad
+ \begin{pmatrix} \cos \theta &   \sin \theta \\
+                 \sin \theta & - \cos \theta
+ \end{pmatrix}
+\]
+
+Since more than one value of $\theta$ will produce the same
+matrix, we must restrict the range in order to obtain a 
+bona fide coordinate.  Thus, we may cover $O(2)$ with an
+atlas consisting of four neighborhoods:
+\begin{align*}
+\left\{  \begin{pmatrix} \cos \theta & - \sin \theta \\
+                 \sin \theta &   \cos \theta
+         \end{pmatrix} \mid
+         - {3 \over 4} \pi < \theta <  {3 \over 4} \pi
+\right\} \\
+\left\{  \begin{pmatrix} \cos \theta & - \sin \theta \\
+                 \sin \theta &   \cos \theta
+         \end{pmatrix} \mid
+         {1 \over 4} \pi < \theta <  {7 \over 4} \pi
+\right\} \\
+\left\{  \begin{pmatrix} \cos \theta &  \sin \theta \\
+                 \sin \theta & - \cos \theta
+         \end{pmatrix} \mid
+         - {3 \over 4} \pi < \theta <  {3 \over 4} \pi
+\right\} \\
+\left\{  \begin{pmatrix} \cos \theta &  \sin \theta \\
+                 \sin \theta & - \cos \theta
+         \end{pmatrix} \mid
+         {1 \over 4} \pi < \theta <  {7 \over 4} \pi
+\right\}
+\end{align*}
+Every element of $O(2)$ must belong to at least one of
+these neighborhoods.  It its trivial to check that the
+transition functions between overlapping coordinate
+patches are 
+%%%%%
+%%%%%
+\end{document}

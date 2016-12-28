@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CompactGroupsAreUnimodular}
+\pmcreated{2013-03-22 17:58:23}
+\pmmodified{2013-03-22 17:58:23}
+\pmowner{asteroid}{17536}
+\pmmodifier{asteroid}{17536}
+\pmtitle{compact groups are unimodular}
+\pmrecord{4}{40481}
+\pmprivacy{1}
+\pmauthor{asteroid}{17536}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{22C05}
+\pmclassification{msc}{28C10}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+{\bf Theorem -} If $G$ is a compact Hausdorff topological group, then $G$ is unimodular, i.e. it's left and right Haar measures coincide.
+
+$\,$
+
+{\bf \emph{Proof}:}
+
+Let $\Delta$ denote the modular function of $G$. It is enough to prove that $\Delta$ is constant and equal to $1$, since this proves that every left Haar measure is right invariant.
+
+Since $\Delta$ is continuous and $G$ is compact, $\Delta(G)$ is a compact subset of $\mathbb{R}^+$. In particular, $\Delta(G)$ is a bounded subset of $\mathbb{R}^+$.
+
+But if $\Delta$ is not identically one, then there is a $t \in G$ such that $\Delta(t) >1$ (recall that $\Delta$ is an homomorphism). Hence, $\Delta(t^n) = \Delta(t)^n \longrightarrow \infty$ as $n \in \mathbb{N}$ increases, which is a contradiction since $\Delta(G)$ is bounded. $\square$
+
+%%%%%
+%%%%%
+\end{document}

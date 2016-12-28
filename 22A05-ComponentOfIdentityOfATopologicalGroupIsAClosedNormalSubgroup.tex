@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ComponentOfIdentityOfATopologicalGroupIsAClosedNormalSubgroup}
+\pmcreated{2013-03-22 18:01:42}
+\pmmodified{2013-03-22 18:01:42}
+\pmowner{asteroid}{17536}
+\pmmodifier{asteroid}{17536}
+\pmtitle{component of identity of a topological group is a closed normal subgroup}
+\pmrecord{6}{40546}
+\pmprivacy{1}
+\pmauthor{asteroid}{17536}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{22A05}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+{\bf Theorem -} Let $G$ be a topological group and $e$ its identity element. The connected component of $e$ is a closed normal subgroup of $G$.
+
+$\,$
+
+{\bf \emph{Proof:}} Let $F$ be the connected component of $e$. All components of a topological space are closed, so $F$ is closed.
+
+Let $a \in F$. Since the multiplication and inversion functions in $G$ are continuous, the set $a F^{-1}$ is also connected, and since $e \in aF^{-1}$ we must have $aF^{-1} \subseteq F$. Hence, for every $b \in F$ we have $ab^{-1} \in F$, i.e. $F$ is a subgroup of $G$.
+
+If $g$ is an arbitrary element of $G$, then $g^{-1}Fg$ is a connected subset containing $e$. Hence $g^{-1}Fg \subset F$ for every $g \in G$, i.e. $F$ is a normal subgroup. $\square$
+%%%%%
+%%%%%
+\end{document}

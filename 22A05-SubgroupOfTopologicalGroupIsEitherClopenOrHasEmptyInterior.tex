@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SubgroupOfTopologicalGroupIsEitherClopenOrHasEmptyInterior}
+\pmcreated{2013-03-22 18:01:29}
+\pmmodified{2013-03-22 18:01:29}
+\pmowner{asteroid}{17536}
+\pmmodifier{asteroid}{17536}
+\pmtitle{subgroup of topological group is either clopen or has empty interior}
+\pmrecord{6}{40542}
+\pmprivacy{1}
+\pmauthor{asteroid}{17536}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{22A05}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+{\bf Theorem -} Every subgroup of a topological group is either clopen or has empty interior.
+
+$\,$
+
+{\bf \emph{Proof:}} Let $G$ be a topological group and $H \subseteq G$ a subgroup. Suppose the interior of $H$ is nonempty, i.e. there is a non-empty open set $U$ of $G$ such that $U \subseteq H$. Translating $U$ around $H$ we can see that $H$ is open: if $u \in U$ then for every $h \in H$ the set $hu^{-1}U$ is open in $G$, is contained in $H$ and contains $h$, which implies that $H$ is open in $G$.
+
+Let us now see that $H$ is closed. Let $\overline{H}$ denote the closure of $H$ and let $H^2$ be the set of elements of the form $h_1h_2$ where $h_1, h_2 \in H$. Of course, since $H$ is a subgroup of $G$, we have that $H^2=H$. Also, since $H$ is open we know that$ H\subseteq \overline{H} \subseteq H^2$ (see \PMlinkname{this entry}{BasicResultsInTopologicalGroups} - \PMlinkescapetext{Proposition} 5). Hence $\overline{H}=H$, i.e. $H$ is closed.
+
+We have proven that a subgroup of a topological group must be clopen or it must have empty interior. Since this two topological properties can never be satisfied simultaneously, we have that every subgroup of a topological group is either clopen or it has empty interior. $\square$
+%%%%%
+%%%%%
+\end{document}

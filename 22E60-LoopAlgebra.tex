@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LoopAlgebra}
+\pmcreated{2013-03-22 15:30:07}
+\pmmodified{2013-03-22 15:30:07}
+\pmowner{rspuzio}{6075}
+\pmmodifier{rspuzio}{6075}
+\pmtitle{loop algebra}
+\pmrecord{12}{37361}
+\pmprivacy{1}
+\pmauthor{rspuzio}{6075}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{22E60}
+\pmclassification{msc}{22E65}
+\pmclassification{msc}{22E67}
+%\pmkeywords{Kac-Moody Lie algebra}
+\pmdefines{loop algebra}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $\mathfrak{g}$ be a Lie algebra over a field $\mathbb{K}$. The \textbf{loop algebra} based on $\mathfrak{g}$ is defined to be $\mathcal{L}(\mathfrak{g}) := \mathfrak{g} \otimes_{\mathbb{K}} \mathbb{K}[t, t^{-1}]$ as a vector space over $\mathbb{K}$. The Lie bracket is determined by
+
+\[ \left[ X \otimes t^k, Y \otimes t^l \right] = \left[ X, Y \right]_{\mathfrak{g}} \otimes t^{k+l} \]
+
+where $\left[\,,\,\right]_{\mathfrak{g}}$ denotes the Lie bracket from $\mathfrak{g}$.
+
+This clearly determines a Lie bracket. For instance the three term sum in the Jacobi identity (for elements which are homogeneous in $t$) simplifies to the three term sum for the Jacobi identity in $\mathfrak{g}$ tensored with a power of $t$ and thus is zero in $\mathcal{L}(\mathfrak{g})$.
+
+The name ``loop algebra'' comes from the fact that this Lie algebra arises in the study of Lie algebras of loop groups.  For the time being, assume that $\mathbb{K}$ is the real or complex numbers so that the familiar structures of analysis and topology are available.  Consider the set of all mappings from the circle $S^1$ (we may think of this circle more concretely as the unit circle of the complex plane) to a finite-dimensional Lie group $G$ with Lie algebra is $\mathfrak{g}$.  We may make this set into a group by defining multiplication pointwise: given $a, b \colon S^1 \to G$, we define $(a \cdot b)(x) = a(x) 
+\cdot b(x)$.
+\begin{thebibliography}{1}
+\bibitem{Kac}
+Victor Kac, \emph{Infinite Dimensional Lie Algebras}, Third edition. Cambridge University Press, Cambridge, 1990.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

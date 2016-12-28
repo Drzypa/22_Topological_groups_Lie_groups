@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CharacterizationOfAlexandroffGroups}
+\pmcreated{2013-03-22 18:45:43}
+\pmmodified{2013-03-22 18:45:43}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{characterization of Alexandroff groups}
+\pmrecord{4}{41542}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{22A05}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Topological group $G$ is called \textit{Alexandroff} if $G$ is an Alexandroff space as a topological space. For example every finite topological group is Alexandroff. We wish to characterize them. First recall, that if $A$ is a subset of a topological space, then $A^{o}$ denotes an intersection of all open neighbourhoods of $A$.
+
+\textbf{Lemma.} Let $X$ be an Alexandroff space, $f:X\times\cdots\times X\to X$ be a continuous map and $x\in X$ such that $f(x,\ldots,x)=x$. Then $f(A\times\cdots\times A)\subseteq A$, where $A=\{x\}^{o}$.
+
+\textit{Proof.} Let $A=\{x\}^{o}$. Of course $A$ is open (because $X$ is Alexandroff). Therefore $f^{-1}(A)$ is open in $X\times\cdots\times X$. Thus (from the definition of product topology and continuous map), there are open subsetes $V_1,\ldots, V_n\subseteq X$ such that each $V_i$ is an open neighbourhood of $x$ and $$f(V_1\times\cdots\times V_n)\subseteq A.$$ Now let $U_i=V_i\cap A$. Of course $x\in U_i$, so $U_i$ is nonempty and $U_i$ is open. Furthermore $U_i\subseteq V_i$ and thus $$f(U_1\times\cdots\times U_n)\subseteq A.$$
+On the other hand $U_i\subseteq A$ and $U_i$ is open neighbourhood of $x$. Thus $U_i=A$, because $A$ is minimal open neighbourhood of $x$. Therefore $$f(A\times\cdots\times A)=f(U_1\times\cdots\times U_n)\subseteq A,$$
+which completes the proof. $\square$
+
+\textbf{Proposition.} Let $G$ be an Alexandroff group. Then there exists open, normal subgroup $H$ of $G$ such that for every open subset $U\subseteq G$ there exist $\{g_{i}\}_{i\in I}\subseteq G$ such that
+$$U=\bigcup_{i\in I}\, g_iH.$$
+
+\textit{Proof.} Let $H=\{e\}^{o}$ be an intersection of all open neighbourhoods of the identity $e\in G$. Let $U$ be an open subset of $G$. If $g\in U$, then $g^{-1}U$ is an open neighbourhood of $e$. Thus $H\subseteq g^{-1}U$ and therefore $gH\subseteq U$. Thus 
+$$U=\bigcup_{g\in U}\, gH.$$
+To complete the proof we need to show that $H$ is normal subgroup of $G$. Consider the following mappings:
+$$M:G\times G\to G\mbox{ is such that }M(x,y)=xy;$$ $$\psi:G\to G\mbox{ is such that }\psi(x)=x^{-1};$$ $$\varphi_{g}:G\to G\mbox{ is such that }\varphi_{g}(x)=gxg^{-1}\mbox{ for any }g\in G.$$
+Of course each of them is continuous (because $G$ is a topological group). Furthermore each of them satisfies Lemma's assumptions (for $x=e$). Thus we have:
+$$HH=M(H\times H)\subseteq H;$$ $$H^{-1}=\psi(H)\subseteq H;$$ $$gHg^{-1}=\varphi_{g}(H)\subseteq H\mbox{ for any }g\in G.$$
+This shows that $H$ is a normal subgroup, which completes the proof. $\square$
+
+\textbf{Corollary.} Let $G$ be a topological group such that $G$ is finite and simple. Then $G$ is either discrete or antidiscrete.
+
+\textit{Proof.} Of course finite topological groups are Alexandroff. Since $G$ is simple, then there are only two normal subgroups of $G$, namely the trivial group and entire $G$. Therfore (due to proposition) the topology on $G$ is ,,generated'' by either the trivial group or entire $G$. In the first case we gain the discrete topology and in the second the antidiscrete topology. $\square$
+%%%%%
+%%%%%
+\end{document}

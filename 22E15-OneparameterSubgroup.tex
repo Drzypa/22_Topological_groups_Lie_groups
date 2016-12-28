@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{OneparameterSubgroup}
+\pmcreated{2013-03-22 14:54:01}
+\pmmodified{2013-03-22 14:54:01}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{one-parameter subgroup}
+\pmrecord{7}{36583}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{22E15}
+\pmclassification{msc}{22E10}
+\pmsynonym{1-parameter subgroup}{OneparameterSubgroup}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $G$ be a Lie Group.  A 
+\emph{one-parameter subgroup} of $G$ is a group homomorphism $$\phi\colon\mathbb{R}\to G$$ that is also a differentiable 
+map at the same time.  We view $\mathbb{R}$ additively and $G$
+multiplicatively, so that $\phi(r+s)=\phi(r)\phi(s)$.
+
+\textbf{Examples}.
+\begin{enumerate}
+\item If $G=\operatorname{GL}(n,k)$, where $k=\mathbb{R}$ or $\mathbb{C}$, then any one-parameter subgroup has the form
+$$\phi(t)=e^{tA},$$ where $A=\frac{d\phi}{dt}(0)$ is an $n\times n$ matrix over $k$.  The matrix $A$ is just a 
+tangent vector to the Lie group $\operatorname{GL}(n,k)$.  This property establishes the fact that there is a 
+one-to-one correspondence between one-parameter subgroups and tangent vectors of $\operatorname{GL}(n,k)$. The same relationship holds for a general Lie group.
+The one-to-one correspondence between tangent vectors at the identity (the
+Lie algebra) and one-parameter subgroups is established via the exponential
+map instead of the matrix exponential.
+\item If $G=\operatorname{O}(n,\mathbb{R})\subseteq\operatorname{GL}(n,\mathbb{R})$, the orthogonal group over $R$, then 
+any one-parameter subgroup has the same form as in the example above, except that $A$ is skew-symmetric: 
+$A^{\operatorname{T}}=-A$.
+\item If $G=\operatorname{SL}(n,\mathbb{R})\subseteq\operatorname{GL}(n,\mathbb{R})$, the special linear group over $R$, 
+then any one-parameter subgroup has the same form as in the example above, except that $\operatorname{tr}(A)=0$, where 
+$\operatorname{tr}$ is the trace operator.
+\item If $G=\operatorname{U}(n)=\operatorname{O}(n,\mathbb{C})\subseteq\operatorname{GL}(n,\mathbb{C})$, the unitary 
+group over $C$, then any one-parameter subgroup has the same form as in the example above, except that $A$ is \PMlinkname{skew-Hermitian}{SkewHermitianMatrix}: $A=-A^{*}=-\overline{A}^{\operatorname{T}}$ and $\operatorname{tr}(A)=0$.
+\end{enumerate}
+%%%%%
+%%%%%
+\end{document}

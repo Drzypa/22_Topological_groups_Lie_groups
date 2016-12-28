@@ -1,0 +1,147 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Complexification}
+\pmcreated{2013-03-22 13:53:55}
+\pmmodified{2013-03-22 13:53:55}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{complexification}
+\pmrecord{7}{34646}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{22E15}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{prop}{Proposition}
+
+\newcommand{\ab}[1]{{#1}_{\mathrm{ab}}}
+\newcommand{\Ad}{\mathrm{Ad}}
+\newcommand{\ad}{\mathrm{ad}}
+\newcommand{\Aut}{\mathrm{Aut}\,}
+\newcommand{\Aff}[2]{\mathrm{Aff}_{#1} #2}
+\newcommand{\aff}[2]{\mathfrak{aff}_{#1} #2}
+\newcommand{\mcB}{\mathcal{B}}
+\newcommand{\bb}[1]{\mathbb{#1}}
+\newcommand{\bfrac}[2]{\left[\frac{#1}{#2}\\right]}
+\newcommand{\bkh}{\backslash}
+\newcommand{\Cyc}[2]{\mathcal{C}^{#1}_{#2}}
+\newcommand{\Cbar}[2]{\overline{\C{#1}{#2}}}
+%\newcommand{\CD}{\R[\Delta]}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\CF}[2]{\ensuremath{\mathfrak{C}(#1,#2)}}
+\newcommand{\Cinf}{\EuScript{C}^{\infty}}
+\newcommand{\cmp}{cyclic mod $p$\xspace}
+\newcommand{\cp}{\mathrm{c.p.}}
+\newcommand{\CS}{\EuScript{CS}}
+\newcommand{\deck}{\EuScript{D}}
+\newcommand{\defl}[1]{\mathfrak{def}_{#1}}
+\newcommand{\Der}{\mathrm{Der}\,}
+\newcommand{\eH}{[X_H]-[Y_H]}
+\newcommand{\EL}{\mathcal{EL}}
+\newcommand{\End}{\mathrm{End}}
+\newcommand{\ES}[1]{\EuScript{#1}}
+\newcommand{\Ext}{\mathrm{Ext}}
+\newcommand{\Fix}{\mathrm{Fix}}
+\newcommand{\fr}[1]{\mathfrak{#1}}
+\newcommand{\Frat}{\mathrm{Frat}\,}
+\newcommand{\Gal}[1]{\Gamma(#1 |\Q)}
+\newcommand{\GL}[2]{\mathrm{GL}_{#1} #2}
+\newcommand{\gl}[2]{\mathfrak{gl}_{#1} #2}
+\newcommand{\GrR}[1]{a(#1 G)}
+\newcommand{\Gr}{\mathrm{Gr}\,}
+\newcommand{\mcH}{\mathcal{H}}
+\renewcommand{\H}{\mathbb{H}}
+\newcommand{\Hom}[2]{\mathrm{Hom}(#1,#2)}
+\newcommand{\id}{\mathrm{id}}
+\newcommand{\im}{\mathrm{im}}
+\newcommand{\ind}[2]{\mathrm{ind}^{#1}_{#2}}
+\newcommand{\indp}[2]{\mathfrak{ind}^{#1}_{#2}}
+\renewcommand{\inf}[1]{\mathfrak{inf}_{#1}}
+\newcommand{\inn}[1]{\langle #1\rangle}
+\renewcommand{\int}{\mathrm{int}}
+\newcommand{\Iso}{\mathrm{Iso}}
+\newcommand{\K}{\mathcal{K}}
+\renewcommand{\ker}{\mathrm{ker}\,}
+\renewcommand{\L}[1]{\mathfrak{L}(#1)}
+\newcommand{\lap}[1]{\Delta_{#1}}
+\newcommand{\lapM}{\Delta_M}
+\newcommand{\Lie}{\mathrm{Lie}}
+\newcommand{\lineq}{linearly equivalent\xspace}
+\newcommand{\mc}[1]{\mathcal{#1}}
+\newcommand{\mG}{m_G}
+\newcommand{\mK}{m_{\K}}
+\newcommand{\mindeg}[1]{\fr{md}(#1)}
+\newcommand{\N}{\mathbb{N}}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\Om}{\Omega}
+\newcommand{\om}{\omega}
+\newcommand{\Orb}{\mathrm{Orb}}
+\newcommand{\pad}{\hat{\Z}_p}
+\newcommand{\pder}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\pderw}[1]{\frac{\partial}{\partial #1}}
+\newcommand{\pdersec}[2]{\frac{\partial^2 #1}{\partial {#2}^2}} 
+\newcommand{\perm}[1]{\pi_{#1}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\rad}{\mathrm{rad}\,}
+\newcommand{\res}[2]{\mathrm{res}^{#1}_{#2}}
+\newcommand{\resp}[2]{\mathfrak{res}^{#1}_{#2}}
+\newcommand{\RG}{\EuScript{R}_G}
+\newcommand{\rk}{\mathrm{rk}\,}
+\newcommand{\V}[1]{\mathbf{#1}}
+\newcommand{\vp}{\varphi}
+\newcommand{\Stab}{\mathrm{Stab}}
+\newcommand{\SL}[2]{\mathrm{SL}_{#1} #2}
+\renewcommand{\sl}[2]{\fr{sl}_{#1} #2}
+\newcommand{\SO}[2]{\mathrm{SO}_{#1} #2}
+\newcommand{\Sp}[2]{\mathrm{Sp}_{#1} #2}
+\renewcommand{\sp}[2]{\fr{sp}_{#1} #2}
+\newcommand{\SU}[1]{\mathrm{SU}( #1)}
+\newcommand{\su}[1]{\fr{su}_{#1}}
+\newcommand{\Sym}{\mathrm{Sym}}
+\newcommand{\sym}{\mathrm{sym}}
+\newcommand{\Tg}{\mc{T}(\fr g)}
+\newcommand{\tom}{\tilde{\omega}}
+\newcommand{\ghtghp}{\fr g/\fr h\oplus(\fr g/\fr h^\perp)^*}
+\newcommand{\ghps}{(\fr g/\fr h^\perp)^*}
+\newcommand{\Tr}{\mathrm{Tr}}
+\newcommand{\tr}{\mathrm{tr}}
+%\renewcommand{\thechapter}{\Roman{chapter}}
+%\renewcommand{\thesection}{\thechapter.\arabic{section}}
+%\renewcommand{\thethm}{\thechapter.\arabic{thm}}
+\newcommand{\Ug}{\mc{U}(\fr g)}
+\newcommand{\Uh}{\mc{U}(\fr h)}
+\renewcommand{\V}[1]{\mathbf{#1}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Zp}{\Z/p}
+\begin{document}
+Let $G$ be a real Lie group.  Then the {\em complexification} $G_\C$ of $G$ is the unique complex Lie group equipped with a map $\vp:G\to G_\C$ such that any map $G\to H$ where $H$ is a 
+complex Lie group, extends to a holomorphic map $G_\C\to H$.  If $\fr g$ and 
+$\fr g_\C$ are the respective Lie algebras, $\fr g_\C\cong\fr g\otimes_\R\C$.
+
+For simply connected groups, the construction is obvious: we simply take the 
+simply connected complex group with Lie algebra $\fr g_\C$, and $\vp$ to be the 
+map induced by the inclusion $\fr g\to\fr g_\C$.
+
+If $\gamma\in G$ is central, then its image is in central in $G_\C$ since 
+$g\mapsto \gamma g\gamma^{-1}$ is a map extending $\vp$, and thus must be the 
+identity by uniqueness half of the universal property.  Thus, if 
+$\Gamma\subset G$ is a discrete central subgroup, then we get a map 
+$G/\Gamma\to G_\C/\vp(\Gamma)$, which gives a complexification for 
+$G/\Gamma$.  Since every Lie group is of this form, this shows existence.
+
+Some easy examples: the complexification both of $\SL n\R$ and $\SU n$ is 
+$\SL n\C$.  The complexification of $\R$ is $\C$ and of $S^1$ is $\C^*$.
+
+The map $\vp\colon G\to G_\C$ is not always injective.  For example, if $G$ is 
+the universal cover of $\SL n\R$ (which has fundamental group $\Z$), then 
+$G_\C\cong\SL n\C$, and $\vp$ factors through the covering $G\to \SL n\R$.
+%%%%%
+%%%%%
+\end{document}

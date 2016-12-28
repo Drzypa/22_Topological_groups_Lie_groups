@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RepresentationTheoryOfmathfraksl2mathbbC}
+\pmcreated{2013-03-22 15:30:29}
+\pmmodified{2013-03-22 15:30:29}
+\pmowner{benjaminfjones}{879}
+\pmmodifier{benjaminfjones}{879}
+\pmtitle{representation theory of $\mathfrak{sl}_2 \mathbb{C}$}
+\pmrecord{7}{37369}
+\pmprivacy{1}
+\pmauthor{benjaminfjones}{879}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{22E60}
+\pmclassification{msc}{22E47}
+%\pmkeywords{special linear Lie algebra}
+\pmdefines{sl_2}
+\pmdefines{special linear Lie algebra of 2x2 matricies}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+The special linear Lie algebra of $2 \times 2$ matricies, denoted by $\mathfrak{sl}_2 \mathbb{C}$, is defined to be the span (over $\mathbb{C}$) of the matricies
+
+\[ E = \left( \begin{array}{cc} 0 & 1 \\ 0 & 0 \end{array} \right),
+H = \left( \begin{array}{cc} 1 & 0 \\ 0 & -1 \end{array} \right),
+F = \left( \begin{array}{cc} 0 & 0 \\ -1 & 0 \end{array} \right) \]
+
+with Lie bracket given by the commutator of matricies: $[X,Y] := X \cdot Y - Y \cdot X$. The matricies $E, F, H$ satisfy the commutation relations: $[E, F] = H, [H, E] = 2 E, [H, F] = -2 F$.
+
+The representation theory of $\mathfrak{sl}_2 \mathbb{C}$ is a very important tool for understanding the structure theory and representation theory of other Lie algebras (semi-simple finite dimensional Lie algebras, as well as infinite dimensional Kac-Moody Lie algebras).
+
+The finite dimensional, irreducible, representations of $\mathfrak{sl}_2 \mathbb{C}$ are in bijection with the non-negative integers $\mathbb{Z}_{\ge 0}$ as follows. Let $k \in \mathbb{Z}_{\ge 0}$, $V$ be a $\mathbb{C}$-vector space spanned by vectors $v_0, \ldots, v_k$. The following action of $E, H, F$ on $V$ define the unique (up to isomorphism) irreducible representation of $\mathfrak{sl}_2 \mathbb{C}$ of dimension $k+1$ (or of highest weight $k$):
+
+\[ 
+\begin{array}{ll} 
+E . v_0 & = 0 \\
+E . v_i & = (i-1)(k-i+1) v_{i-1} \quad \forall \quad 1 \le i \le k \\
+H . v_i & = (k - 2i) v_i         \quad \forall \quad 1 \le i \le k \\ 
+F . v_i & = v_{i+1}              \quad \forall \quad 0 \le i < k \\
+F . v_k & = 0
+\end{array}
+\]
+
+The main points are that the one dimensional spaces $\mathbb{C} \cdot v_i$ are eigenspaces for $H$ with eigenvalue $k - 2i$, the operator corresponding to $E$ kills $v_0$ and otherwise sends $\mathbb{C} \cdot v_i \to \mathbb{C} \cdot v_{i-1}$, while $F$ kills $v_k$ and otherwise sends $\mathbb{C} \cdot v_i \to \mathbb{C} \cdot v_{i+1}$. The operator corresponding to $E$ is often called a \emph{raising operator} since it raises the eigenvalue for $H$, and that of $F$ is called a \emph{lowering operator} since it lowers the eigenvalue for $H$.
+
+$\mathfrak{sl}_2 \mathbb{C}$ is a simple Lie algebra, thus by Weyl's Theorem all finite dimensional representations for $\mathfrak{sl}_2 \mathbb{C}$ are completely reducible. So any finite dimensional representation of $\mathfrak{sl}_2 \mathbb{C}$ splits into a direct sum of irreducible representations for various non-negative integers as described above.
+%%%%%
+%%%%%
+\end{document}

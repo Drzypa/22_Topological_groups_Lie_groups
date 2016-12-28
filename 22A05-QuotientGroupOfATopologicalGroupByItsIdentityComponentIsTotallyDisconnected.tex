@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{QuotientGroupOfATopologicalGroupByItsIdentityComponentIsTotallyDisconnected}
+\pmcreated{2013-03-22 18:45:35}
+\pmmodified{2013-03-22 18:45:35}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{quotient group of a topological group by its identity component is totally disconnected}
+\pmrecord{7}{41539}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{22A05}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Assume that $G$ is a topological group and $G_{e}$ is the identity component. It is well known, that $G_{e}$ is a normal subgroup of $G$, thus we may speak about quotient group.
+
+\textbf{Proposition.} The quotient group $G/G_{e}$ is totally disconnected.
+
+\textit{Proof.} First of all note that connected components of $G$ are of the form $gG_{e}$. Indeed, $G_{e}$ is a connected component of $e\in G$ and for any $g\in G$ we have a homeomorphism $f_{g}:G\to G$ such that $f_{g}(x)=gx$. Thus $f_{g}(G_{e})=gG_{e}$ is a connected component of $g\in G$ (please, see \PMlinkname{this entry}{HomeomorphismsPreserveConnectedComponents} for more details).
+
+Now let $\pi:G\to G/G_{e}$ be the quotient map (which is open and onto) and $A\subseteq G/G_{e}$ be an arbitrary, connected subset of $G/G_{e}$. Assume that there are at least two points in $A$. Consider the subset $\pi^{-1}(A)\subseteq G$ (which is the union of some cosets). Since $A$ has at least two points, then $\pi^{-1}(A)$ contains at least two cosets, which are connected components of $G$. Thus $\pi^{-1}(A)$ is not connected. Therefore there exist $U,V\subseteq \pi^{-1}(A)$ such that $U,V$ are open (in $\pi^{-1}(A)$), disjoint and $U\cup V=\pi^{-1}(A)$. 
+
+Note that if $x\in U$, then the connected component of $x$ (which is equal to $xG_{e}$) is contained in $U$. Indeed, assume that $xG_{e}\not\subseteq U$. Then there is $h\in xG_{e}$ such that $h\not\in U$. Then, since $U\cup V=\pi^{-1}(A)$ we have that $h\in V$. But then $U\cap xG_{e}$ and $V\cap xG_{e}$ are nonempty open and disjoint subsets of $xG_{e}$ such that $(U\cap xG_{e})\cup(V\cap xG_{e})=xG_{e}$. Contradiction, because $xG_{e}$ is connected. Analogusly, whenever $x\in V$, then $xG_{e}\subseteq V$.
+
+Therefore both $U$ and $V$ are unions of cosets. Thus $\pi(U)$ and $\pi(V)$ are disjoint. Furthermore $\pi(U)
+\cup\pi(V)=A$ and both $\pi(U)$, $\pi(V)$ are open in $A$ (because $\pi$ is an open map). This means that $A$ is not connected. Contradiction. Thus $A$ has at most one element, which completes the proof. $\square$
+
+\textbf{Remark.} This proposition can be easily generalized as follows: assume that $X$ is a topological space, $X=\bigcup X_i$ is a decomposition of $X$ into connected components and $R$ is an equivalence relation associated to this decomposition (i.e. $xRy$ if and only if there exists $i$ such that $x,y\in X_i$). Then, if the quotient map $\pi:X\to X/R$ is open, then $X/R$ is totally disconnected.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,152 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TopologicalGroup}
+\pmcreated{2013-03-22 15:47:09}
+\pmmodified{2013-03-22 15:47:09}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{topological group}
+\pmrecord{29}{37744}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{22A05}
+%\pmkeywords{group}
+%\pmkeywords{topology}
+\pmrelated{Group}
+\pmrelated{TopologicalSpace}
+\pmdefines{homomorphism of topological groups}
+\pmdefines{isomorphism of topological groups}
+
+\usepackage{amsfonts}
+
+\def\R{\mathbb{R}}
+\def\Z{\mathbb{Z}}
+
+\begin{document}
+\PMlinkescapephrase{completely regular}
+\PMlinkescapeword{continuous}
+\PMlinkescapeword{equivalent}
+\PMlinkescapeword{homogeneity}
+\PMlinkescapeword{homogeneous}
+\PMlinkescapeword{natural}
+\PMlinkescapeword{normal}
+\PMlinkescapeword{operations}
+\PMlinkescapeword{properties}
+\PMlinkescapeword{quotient}
+\PMlinkescapeword{quotients}
+\PMlinkescapeword{section}
+\PMlinkescapeword{structure}
+\PMlinkescapeword{subgroup}
+
+\section*{Definitions}
+
+A \emph{topological group} is a group $G$ endowed with a topology
+such that the multiplication and inverse operations of $G$
+are \PMlinkname{continuous}{Continuous}.
+That is, the map $G\times G\to G$ defined by $(x,y)\mapsto xy$ is continuous,
+where the topology on $G\times G$ is the product topology,
+and the map $G\to G$ defined by $x\mapsto x^{-1}$ is also continuous.
+
+Many authors require the topology on $G$ to be Hausdorff,
+which is equivalent to requiring that the trivial subgroup be a closed set.
+
+A topology on a group $G$ that makes $G$ into a topology group
+is called a \emph{group topology} for $G$.
+
+\section*{Examples}
+
+Any group becomes a topological group if it is given the discrete topology.
+
+Any group becomes a topological group if it is given the indiscrete topology.
+
+The real numbers with the standard topology form a topological group.
+More generally, an ordered group with its \PMlinkescapetext{order topology}
+is a topological group.
+
+Lie groups are topological groups with additional structure.
+
+Profinite groups are another important class of topological groups;
+they arise, for example, in infinite Galois theory.
+
+\section*{Subgroups, quotients and products}
+
+Every \PMlinkname{subgroup}{Subgroup} of a topological group
+either has empty interior or is clopen.
+In particular, all proper subgroups of a connected topological group
+have empty interior.
+The closure of any subgroup is also a subgroup,
+and the closure of a normal subgroup is normal
+(for proofs, see the entry
+``\PMlinkname{closure of sets closed under a finitary operation}{ClosureOfSetsClosedUnderAFinitaryOperation}'').
+A subgroup of a topological group is itself a topological group,
+with the subspace topology.
+
+If $G$ is a topological group and $N$ is a normal subgroup of $G$,
+then the quotient group $G/N$ is also a topological group,
+with the quotient topology.
+This quotient $G/N$ is Hausdorff if and only if $N$ is a closed subset of $G$.
+
+If $(G_i)_{i\in I}$ is a family of topological groups,
+then the unrestricted direct product $\prod_{i\in I}G_i$
+is also a topological group, with the product topology.
+
+\section*{Morphisms}
+
+Let $G$ and $H$ be topological groups, and let $f\colon G\to H$ be a function.
+
+The function $f$ is said to be a \emph{homomorphism of topological groups}
+if it is a group homomorphism and is also continuous.
+It is said to be an \emph{isomorphism of topological groups}
+if it is both a group isomorphism and a homeomorphism.
+
+Note that it is possible for $f$ to be a continuous group isomorphism
+(that is, a bijective homomorphism of topological groups)
+and yet not be an isomorphism of topological groups.
+This occurs, for example, if $G$ is $\R$ with the discrete topology,
+and $H$ is $\R$ with its usual topology,
+and $f$ is the identity map on $\R$.
+
+\section*{Topological properties}
+
+While every group can be made into a topological group,
+the same cannot be said of every topological space.
+In this section we mention some of the properties
+that the underlying topological space must have.
+
+Every topological group is bihomogeneous
+and \PMlinkname{completely regular}{Tychonoff}.
+Note that our earlier claim that a topological group
+is Hausdorff if and only if its trivial subgroup is closed
+follows from this:
+if the trivial subgroup is closed,
+then homogeneity ensures that all singletons are closed,
+and so the space is \PMlinkname{$\hbox{T}_1$}{T1Space},
+and being completely regular is therefore Hausdorff.
+A topological group is not necessarily \PMlinkid{normal}{1530}, however,
+a counterexample being the unrestricted direct product
+of uncountably many copies of the discrete group $\Z$.
+
+Every topological group is obviously an H-space.
+Consequently, the fundamental group of a topological group is abelian.
+Note that because topological groups are homogeneous,
+the fundamental group does not depend (up to isomorphism)
+on the choice of basepoint.
+
+Every locally compact topological group
+is \PMlinkid{normal}{1530} and strongly paracompact.
+
+Every connected locally compact topological group is $\sigma$-compact.
+
+\section*{Other notes}
+
+Every topological group possesses a natural uniformity,
+which induces the topology.
+See the entry about the \PMlinkname{uniformity of a topological group}{UniformStructureOfATopologicalGroup}.
+
+A locally compact topological group
+possesses a natural measure, called the Haar measure.
+%%%%%
+%%%%%
+\end{document}

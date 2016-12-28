@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{InvariantScalarProduct}
+\pmcreated{2013-03-22 15:30:16}
+\pmmodified{2013-03-22 15:30:16}
+\pmowner{benjaminfjones}{879}
+\pmmodifier{benjaminfjones}{879}
+\pmtitle{invariant scalar product}
+\pmrecord{7}{37364}
+\pmprivacy{1}
+\pmauthor{benjaminfjones}{879}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{22E15}
+\pmclassification{msc}{22E10}
+\pmclassification{msc}{22E60}
+\pmclassification{msc}{15A63}
+\pmclassification{msc}{22E20}
+\pmsynonym{invariant bilinear form}{InvariantScalarProduct}
+\pmsynonym{associative bilinear form}{InvariantScalarProduct}
+%\pmkeywords{scalar product}
+%\pmkeywords{group action}
+%\pmkeywords{Killing form}
+\pmrelated{DotProduct}
+\pmdefines{invariant scalar product}
+\pmdefines{associative bilinear form}
+\pmdefines{Killing form}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $\mathbb{K}$ be a field and $V$ a vector space over $\mathbb{K}$. Let $G$ be a group with a specified representation on $V$ denoted by $g . v$ for $v \in V$ and $g \in G$.
+
+An \emph{invariant scalar product} (with respect to the action of $G$) on $V$ is a scalar product $\left( \cdot \lvert \cdot \right)$ on $V$ (i.e. a non-degenerate, symmetric $\mathbb{K}$-bilinear form) such that for any $g \in G, u,v \in V$ we have
+
+\[ \left( g . u \lvert g . v \right) = \left( u \lvert v \right) \]
+
+Now let $\mathfrak{g}$ be a Lie algebra over $\mathbb{K}$ with a representation on $V$ denoted by $X . v$ for $X \in \mathfrak{g}, v \in V$. Then an \emph{invariant scalar product} (with respect to the action of $\mathfrak{g}$) is a scalar product on $V$ such that for any $X \in \mathfrak{g}, u,v \in V$ we have
+
+\[ \left( X . u \lvert v \right) =  - \left( u \lvert X . v \right) \]
+
+An invariant scalar product on a Lie algebra $\mathfrak{g}$ is by definition an
+invariant scalar product as above where the representation is the adjoint representation of $\mathfrak{g}$ on itself. In this case invariance is usualy written $\left( [X, Y] \mid Z \right) = \left( X \mid [Y, Z] \right)$
+
+\section{Examples}
+
+For example if $G = O(n)$ the orthogonal subgroup of $n \times n$ real matricies and $\mathbb{R}^n$ is the natural representation for $O(n)$, then the standard Euclidean scalar product on $\mathbb{R}^n$ is an invariant scalar product. Invariance in this example follows from the definition of $O(n)$.
+
+As another example if $\mathfrak{g}$ is a complex semi-simple Lie algebra then the \emph{Killing form} $\kappa(X,Y) := Tr(ad_X \cdot ad_Y)$ is an invariant scalar product on $\mathfrak{g}$ itself via the adjoint representation. Invariance in this example follows from the fact that the trace operator is \emph{associative}, i.e. $Tr([Y,X] \cdot Z) = - Tr([X,Y] \cdot Z) = - Tr(X \cdot [Y,Z])$. Thus an invariant scalar product (with respect to a Lie algebra representation) is sometimes called an \emph{associative scalar product}.
+%%%%%
+%%%%%
+\end{document}

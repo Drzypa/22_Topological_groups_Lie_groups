@@ -1,0 +1,92 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ModularFunction}
+\pmcreated{2013-03-22 17:58:18}
+\pmmodified{2013-03-22 17:58:18}
+\pmowner{asteroid}{17536}
+\pmmodifier{asteroid}{17536}
+\pmtitle{modular function}
+\pmrecord{8}{40479}
+\pmprivacy{1}
+\pmauthor{asteroid}{17536}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{22D05}
+\pmclassification{msc}{28C10}
+\pmsynonym{Haar modulus}{ModularFunction}
+\pmsynonym{modular character}{ModularFunction}
+\pmsynonym{modular homomorphism}{ModularFunction}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $G$ be a locally compact Hausdorff topological group and $\mu$ a left Haar measure. Although left and right Haar measures in $G$ always exist, they generally do not coincide, i.e. a left Haar measure is usually not invariant under right translations. Nevertheless, the right translations of a left Haar measure can be easily described as explained in the following theorem.
+
+$\,$
+
+{\bf Theorem -} Let $G$ be a locally compact Hausdorff topological group and $\mu$ a left Haar measure in $G$. Then, there exists a continuous homomorphism $\Delta:G \longrightarrow \mathbb{R}^+$ such that, for every $t \in G$ and every measurable subset $A$
+\begin{displaymath}
+\mu(At) = \Delta(t^{-1})\mu(A)
+\end{displaymath}
+Moreover, if $f:G \longrightarrow \mathbb{C}$ is an integrable function then
+\begin{displaymath}
+\Delta(t)\int_Gf(st) \mu(s) = \int_G f(s) \mu(s)
+\end{displaymath}
+
+$\,$
+
+The function $\Delta$ is called the {\bf modular function} of $G$ (notice that, by uniqueness up to scalar multiple of left Haar measures, $\Delta$ only depends on $G$). Other names for $\Delta$ that can be found are: \emph{Haar modulus}, or \emph{modular character} or \emph{modular homomorphism}.
+
+We now prove the above theorem, except the continuity of $\Delta$ (which is slightly harder to obtain).
+
+$\,$
+
+{\bf \emph{Proof (except continuity of $\Delta$):}}
+
+Let $t \in G$. The function $\nu$, defined on measurable subsets $A$ by
+\begin{displaymath}
+\nu (A):= \mu(At)
+\end{displaymath}
+
+is easily seen to be a measure in $G$. Moreover, $\nu$ is left invariant (since $\mu$ is left invariant) and satisfies the additional conditions to be a left Haar measure. By the uniqueness of left Haar measures, $\mu$ must be a multiple of $\nu$, i.e. $\mu=\Delta(t)\nu$ for some positive scalar $\Delta(t) \in \mathbb{R}^+$. Thus, we have proven that for every measurable subset $A$
+
+\begin{displaymath}
+\mu(At)= \Delta(t)^{-1}\mu(A)
+\end{displaymath}
+
+Now for $s, t \in G$ we have that $\mu(Ast)=\Delta(st)^{-1}\mu(A)$, but also
+\begin{itemize}
+\item $\mu(Ast)= \Delta(t)^{-1}\mu(As)$, and
+\item $\mu(As) = \Delta(s)^{-1}\mu(A)$
+\end{itemize}
+So, we can see that, for every measurable subset $A$,
+
+\begin{displaymath}
+\Delta(st)^{-1}\mu(A) = \Delta(t)^{-1}\Delta(s)^{-1}\mu(A)
+\end{displaymath}
+Hence, $\Delta(st) = \Delta(s)\Delta(t)$. Thus, $\Delta$ is an homomorphism.
+
+The statement about integrals of functions follows easily by approximation by simple functions. For simple functions it is easy to see it is true using the now established condition $\mu(At) = \Delta(t^{-1})\mu(A)$. $\square$
+%%%%%
+%%%%%
+\end{document}

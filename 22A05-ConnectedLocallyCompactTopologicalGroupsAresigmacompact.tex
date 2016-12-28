@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ConnectedLocallyCompactTopologicalGroupsAresigmacompact}
+\pmcreated{2013-03-22 17:37:12}
+\pmmodified{2013-03-22 17:37:12}
+\pmowner{asteroid}{17536}
+\pmmodifier{asteroid}{17536}
+\pmtitle{connected locally compact topological groups are $\sigma$-compact}
+\pmrecord{9}{40039}
+\pmprivacy{1}
+\pmauthor{asteroid}{17536}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{22A05}
+\pmclassification{msc}{22D05}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+The main result of this entry is the following theorem (whose proof is given below). The result expressed in the title then follows as a corollary.
+
+{\bf Theorem -} Every locally compact topological group $G$ has an open \PMlinkname{$\sigma$-compact}{SigmaCompact} subgroup $H$.
+
+{\bf Corollary 1 -} Every locally compact topological group is the topological disjoint union of $\sigma$-compact spaces.
+
+{\bf Corollary 2 -} Every connected locally compact topological group is $\sigma$-compact.
+
+We first outline the proofs of the above corollaries:
+
+{\bf \textit{Proof (Corollaries 1 and 2) :}} Let $G$ be a locally compact topological group. The main theorem implies that there is an open $\sigma$-compact subgroup $H$. 
+
+It is known that every open subgroup of $G$ is also closed (see this \PMlinkname{entry}{ClosednessOfSubgroupsOfTopologicalGroups}). Therefore, each $gH$ is a clopen $\sigma$-compact subset of $G$, and $G$ is the topological disjoint union $\displaystyle \bigcup_{g \in G}\; gH$.
+
+Of course, if $G$ is connected then $H$ must be all of $G$. Hence, $G$ is $\sigma$-compact. $\square$
+
+$\quad$
+
+{\bf \textit{Proof (Theorem) :}} Let us fix some notation first. If $A$ is a subset of $G$ we use the notation $A^{-1} := \{ a^{-1} : a \in A\}$,  $A^n : = \{ a_1\dots a_n : a_1, \dots, a_n \in A\}$ and $\overline{A}$ denotes the closure of $A$.
+
+Pick a neighborhood $W$ of $e$ (the identity element of $G$) with compact closure. Then $V:= W \cap W^{-1}$ is a neighborhood of $e$ with compact closure such that $V = V^{-1}$.
+
+Let $ H := \bigcup_{n =1}^{\infty} V^n$. $H$ is clearly a subgroup of $G$. We now only have to prove that $H$ is open and $\sigma$-compact.
+
+We have that (see this \PMlinkname{entry}{BasicResultsInTopologicalGroups} - \PMlinkescapetext{Propositions} 3, 4 and 5)
+\begin{itemize}
+\item $V^n$ is open
+\item $\overline{V}^n$ is compact
+\item $\overline{V}^n \subset V^{2n}$
+\end{itemize}
+
+So $H$ is open and also $ H = \bigcup_{n =1}^{\infty} \overline{V}^n$, which implies that $H$ is $\sigma$-compact. $\square$
+%%%%%
+%%%%%
+\end{document}

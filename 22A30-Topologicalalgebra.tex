@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Topologicalalgebra}
+\pmcreated{2013-03-22 14:45:38}
+\pmmodified{2013-03-22 14:45:38}
+\pmowner{HkBst}{6197}
+\pmmodifier{HkBst}{6197}
+\pmtitle{topological $*$-algebra}
+\pmrecord{12}{36402}
+\pmprivacy{1}
+\pmauthor{HkBst}{6197}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{22A30}
+\pmclassification{msc}{16W80}
+\pmclassification{msc}{16W10}
+\pmclassification{msc}{46K05}
+\pmclassification{msc}{46H35}
+\pmsynonym{topological *-algebra}{Topologicalalgebra}
+\pmrelated{BanachAlgebra}
+\pmrelated{WeakHopfCAlgebra2}
+\pmrelated{VonNeumannAlgebra}
+\pmdefines{involution $*$-algebra}
+\pmdefines{*-algebra}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newenvironment{df}[1][]{\par\noindent\textbf{Definition (#1)}}{}
+\begin{document}
+\PMlinkescapeword{involution}
+
+\begin{df}[Involution]
+An involution on an algebra $A$ over an \PMlinkname{involutory field}{InvolutaryRing} $F$ is a map $\cdot^* : A \to A : a \mapsto a^*$ such that for every $\{a, b\} \subset A$ and $\lambda \in F$ we have
+\begin{enumerate}
+\item $a^{**} = a$,
+\item $(ab)^* = b^* a^*$ and
+\item $(\lambda a+b)^* = \lambda^*a^* + b^*$, where $\lambda^*$ denotes the \PMlinkname{involution}{InvolutaryRing} of $\lambda$ in $F$.
+\end{enumerate}
+\end{df}
+
+\begin{df}[$*$-Algebra]
+A $*$-algebra is an algebra with an involution.
+\end{df}
+
+\begin{df}[Topological $*$-algebra]
+A topological $*$-algebra is a $*$-algebra which is also a topological vector space such that its algebra multiplication and involution are continuous.
+\end{df}
+
+\subsubsection{Remarks:}
+\begin{itemize}
+\item $*$-algebras are a particular \PMlinkescapetext{type} of involutory rings.
+\item The involutory field $F$ is often taken as $\mathbb{C}$, where the involution is given by complex conjugation. In this case, condition 3 could be rewritten as:
+
+3.$\;(\lambda a +b)^*= \overline{\lambda}a^*+b^*$
+\item Banach *-algebras are topological $*$-algebras.
+\end{itemize}
+
+%%%%%
+%%%%%
+\end{document}
