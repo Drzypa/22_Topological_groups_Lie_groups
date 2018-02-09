@@ -1,0 +1,101 @@
+<!DOCTYPE html><html>
+<head>
+<title>example of a proof using nets</title>
+<!--Generated on Fri Feb  9 19:39:06 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">example of a proof using nets</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">In this entry we will give a simple example
+of how nets can be used to prove topological theorems.
+The proof will make use of some of the basic properties of nets
+listed in the parent entry (<span class="ltx_text ltx_font_typewriter">http://planetmath.org/Net</span>).</p>
+</div>
+<div id="Thmthmx1" class="ltx_theorem ltx_theorem_thm">
+<h6 class="ltx_title ltx_runin ltx_font_bold ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem">Theorem</span>.</h6>
+<div id="Thmthmx1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">The centre (<span class="ltx_text ltx_font_typewriter">http://planetmath.org/GroupCentre</span>) of a Hausdorff topological group is closed.</span></p>
+</div>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Proof.</span>
+Let <math id="p3.m1" class="ltx_Math" alttext="Z" display="inline"><mi>Z</mi></math> be the centre of a Hausdorff topological group <math id="p3.m2" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>.
+Let <math id="p3.m3" class="ltx_Math" alttext="x\in\overline{Z}" display="inline"><mrow><mi>x</mi><mo>∈</mo><mover accent="true"><mi>Z</mi><mo>¯</mo></mover></mrow></math>.
+Then there is a net <math id="p3.m4" class="ltx_Math" alttext="(x_{\delta})" display="inline"><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>δ</mi></msub><mo stretchy="false">)</mo></mrow></math> in <math id="p3.m5" class="ltx_Math" alttext="Z" display="inline"><mi>Z</mi></math> such that <math id="p3.m6" class="ltx_Math" alttext="x_{\delta}\to x" display="inline"><mrow><msub><mi>x</mi><mi>δ</mi></msub><mo>→</mo><mi>x</mi></mrow></math>.
+Let <math id="p3.m7" class="ltx_Math" alttext="g\in G" display="inline"><mrow><mi>g</mi><mo>∈</mo><mi>G</mi></mrow></math>.
+By continuity we have <math id="p3.m8" class="ltx_Math" alttext="gx_{\delta}g^{-1}\to gxg^{-1}" display="inline"><mrow><mrow><mi>g</mi><mo>⁢</mo><msub><mi>x</mi><mi>δ</mi></msub><mo>⁢</mo><msup><mi>g</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><mo>→</mo><mrow><mi>g</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><msup><mi>g</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></math>.
+But <math id="p3.m9" class="ltx_Math" alttext="gx_{\delta}g^{-1}=x_{\delta}" display="inline"><mrow><mrow><mi>g</mi><mo>⁢</mo><msub><mi>x</mi><mi>δ</mi></msub><mo>⁢</mo><msup><mi>g</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><mo>=</mo><msub><mi>x</mi><mi>δ</mi></msub></mrow></math>, so <math id="p3.m10" class="ltx_Math" alttext="gx_{\delta}g^{-1}\to x" display="inline"><mrow><mrow><mi>g</mi><mo>⁢</mo><msub><mi>x</mi><mi>δ</mi></msub><mo>⁢</mo><msup><mi>g</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><mo>→</mo><mi>x</mi></mrow></math>.
+As <math id="p3.m11" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> is Hausdorff, these two limits must be the same.
+So <math id="p3.m12" class="ltx_Math" alttext="gxg^{-1}=x" display="inline"><mrow><mrow><mi>g</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><msup><mi>g</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><mo>=</mo><mi>x</mi></mrow></math>, that is, <math id="p3.m13" class="ltx_Math" alttext="gx=xg" display="inline"><mrow><mrow><mi>g</mi><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mrow><mi>x</mi><mo>⁢</mo><mi>g</mi></mrow></mrow></math>.
+Thus <math id="p3.m14" class="ltx_Math" alttext="x\in Z" display="inline"><mrow><mi>x</mi><mo>∈</mo><mi>Z</mi></mrow></math>,
+and we have shown that <math id="p3.m15" class="ltx_Math" alttext="\overline{Z}=Z" display="inline"><mrow><mover accent="true"><mi>Z</mi><mo>¯</mo></mover><mo>=</mo><mi>Z</mi></mrow></math>, as required.</p>
+</div>
+<div id="p4" class="ltx_para ltx_align_right">
+<table class="ltx_tabular ltx_guessed_headers ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_t">Title</th>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">example of a proof using nets</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Canonical name</th>
+<td class="ltx_td ltx_align_left ltx_border_r">ExampleOfAProofUsingNets</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Date of creation</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 17:11:25</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified on</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 17:11:25</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Owner</th>
+<td class="ltx_td ltx_align_left ltx_border_r">yark (2760)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified by</th>
+<td class="ltx_td ltx_align_left ltx_border_r">yark (2760)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Numerical id</th>
+<td class="ltx_td ltx_align_left ltx_border_r">4</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Author</th>
+<td class="ltx_td ltx_align_left ltx_border_r">yark (2760)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Entry type</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Example</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_b ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">msc 22A05</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb  9 19:39:06 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

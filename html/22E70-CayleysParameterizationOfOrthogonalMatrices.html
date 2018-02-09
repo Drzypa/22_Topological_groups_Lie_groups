@@ -1,0 +1,348 @@
+<!DOCTYPE html><html>
+<head>
+<title>Cayley’s parameterization of orthogonal matrices</title>
+<!--Generated on Fri Feb  9 19:40:21 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">Cayley’s parameterization of orthogonal matrices</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Any orthogonal matrix <math id="p2.m1" class="ltx_Math" alttext="O" display="inline"><mi>O</mi></math> which does not have <math id="p2.m2" class="ltx_Math" alttext="-1" display="inline"><mrow><mo>-</mo><mn>1</mn></mrow></math> as an eigenvalue can be expressed as</p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="O=(I+A)(I-A)^{-1}" display="block"><mrow><mi>O</mi><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>I</mi><mo>+</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>I</mi><mo>-</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">for some suitable skew-symmetric matrix <math id="p2.m3" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>. Conversely, any skew-symmetric matrix <math id="p2.m4" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> can be expressed in terms of a suitable orthogonal matrix <math id="p2.m5" class="ltx_Math" alttext="O" display="inline"><mi>O</mi></math> by a similar formula,</p>
+<table id="S0.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex2.m1" class="ltx_Math" alttext="A=(O+I)^{-1}(O-I)." display="block"><mrow><mrow><mi>A</mi><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>O</mi><mo>+</mo><mi>I</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>O</mi><mo>-</mo><mi>I</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">These two formulae are each other’s inverses and set up a one-to-one correspondence between orthogonal and skew-symmetric matrices.</p>
+</div>
+<section id="S0.SS0.SSS1" class="ltx_subsubsection">
+<h2 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">0.0.1 </span>Proof</h2>
+
+<div id="S0.SS0.SSS1.p1" class="ltx_para">
+<p class="ltx_p">The restriction on the eigenvalues of <math id="S0.SS0.SSS1.p1.m1" class="ltx_Math" alttext="O" display="inline"><mi>O</mi></math> is necessary in order for <math id="S0.SS0.SSS1.p1.m2" class="ltx_Math" alttext="I+O" display="inline"><mrow><mi>I</mi><mo>+</mo><mi>O</mi></mrow></math> to be invertible.</p>
+</div>
+<div id="S0.SS0.SSS1.p2" class="ltx_para">
+<p class="ltx_p">It is a matter of simple computation why these formulae are correct. Suppose that <math id="S0.SS0.SSS1.p2.m1" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> is skew-symmetric. Then</p>
+<table id="S0.Ex3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex3.m1" class="ltx_Math" alttext="O^{T}O=\left((I+A)(I-A)^{-1}\right)^{T}(I+A)(I-A)^{-1}" display="block"><mrow><mrow><msup><mi>O</mi><mi>T</mi></msup><mo>⁢</mo><mi>O</mi></mrow><mo>=</mo><mrow><msup><mrow><mo>(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>I</mi><mo>+</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>I</mi><mo>-</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><mo>)</mo></mrow><mi>T</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>I</mi><mo>+</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>I</mi><mo>-</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Using the fact that the transpose of a product is the product of the transposes in the opposite order,</p>
+<table id="S0.Ex4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex4.m1" class="ltx_Math" alttext="=((I-A)^{-1})^{T}(I+A)^{T}(I+A)(I-A)^{-1}" display="block"><mrow><mi></mi><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>I</mi><mo>-</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo stretchy="false">)</mo></mrow><mi>T</mi></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>I</mi><mo>+</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow><mi>T</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>I</mi><mo>+</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>I</mi><mo>-</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Using the fact that the transpose of a sum is the sum of transposes and the transpose of an inverse is the inverse of the transpose,</p>
+<table id="S0.Ex5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex5.m1" class="ltx_Math" alttext="=(I^{T}-A^{T})^{-1}(I^{T}+A^{T})(I+A)(I-A)^{-1}" display="block"><mrow><mi></mi><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mi>I</mi><mi>T</mi></msup><mo>-</mo><msup><mi>A</mi><mi>T</mi></msup></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>I</mi><mi>T</mi></msup><mo>+</mo><msup><mi>A</mi><mi>T</mi></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>I</mi><mo>+</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>I</mi><mo>-</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">By the definition of skew-symmetry, <math id="S0.SS0.SSS1.p2.m2" class="ltx_Math" alttext="A^{T}=-A" display="inline"><mrow><msup><mi>A</mi><mi>T</mi></msup><mo>=</mo><mrow><mo>-</mo><mi>A</mi></mrow></mrow></math> and <math id="S0.SS0.SSS1.p2.m3" class="ltx_Math" alttext="I^{T}=I" display="inline"><mrow><msup><mi>I</mi><mi>T</mi></msup><mo>=</mo><mi>I</mi></mrow></math>,</p>
+<table id="S0.Ex6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex6.m1" class="ltx_Math" alttext="=(I+A)^{-1}(I-A)(I+A)(I-A)^{-1}" display="block"><mrow><mi></mi><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>I</mi><mo>+</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>I</mi><mo>-</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>I</mi><mo>+</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>I</mi><mo>-</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Finally, since <math id="S0.SS0.SSS1.p2.m4" class="ltx_Math" alttext="I+A" display="inline"><mrow><mi>I</mi><mo>+</mo><mi>A</mi></mrow></math> and <math id="S0.SS0.SSS1.p2.m5" class="ltx_Math" alttext="I-A" display="inline"><mrow><mi>I</mi><mo>-</mo><mi>A</mi></mrow></math> commute, we may switch the order of the second and third factors:</p>
+<table id="S0.Ex7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex7.m1" class="ltx_Math" alttext="=(I+A)^{-1}(I+A)(I-A)(I-A)^{-1}" display="block"><mrow><mi></mi><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>I</mi><mo>+</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>I</mi><mo>+</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>I</mi><mo>-</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>I</mi><mo>-</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Then the first two factors and the last two factors cancel, showing that <math id="S0.SS0.SSS1.p2.m6" class="ltx_Math" alttext="O^{T}O=I" display="inline"><mrow><mrow><msup><mi>O</mi><mi>T</mi></msup><mo>⁢</mo><mi>O</mi></mrow><mo>=</mo><mi>I</mi></mrow></math>.</p>
+</div>
+<div id="S0.SS0.SSS1.p3" class="ltx_para">
+<p class="ltx_p">Next, we verify that the second formula is indeed the inverse of the first formula. Multiplying by <math id="S0.SS0.SSS1.p3.m1" class="ltx_Math" alttext="I-A" display="inline"><mrow><mi>I</mi><mo>-</mo><mi>A</mi></mrow></math> on both sides,</p>
+<table id="S0.Ex8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex8.m1" class="ltx_Math" alttext="O(I-A)=I+A" display="block"><mrow><mrow><mi>O</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>I</mi><mo>-</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>I</mi><mo>+</mo><mi>A</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Expanding this and moving terms from one side of the equation to the other,</p>
+<table id="S0.Ex9" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex9.m1" class="ltx_Math" alttext="O-I=A+OA" display="block"><mrow><mrow><mi>O</mi><mo>-</mo><mi>I</mi></mrow><mo>=</mo><mrow><mi>A</mi><mo>+</mo><mrow><mi>O</mi><mo>⁢</mo><mi>A</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Factoring,</p>
+<table id="S0.Ex10" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex10.m1" class="ltx_Math" alttext="O-I=(I+O)A" display="block"><mrow><mrow><mi>O</mi><mo>-</mo><mi>I</mi></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>I</mi><mo>+</mo><mi>O</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>A</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Multiplying both sides by <math id="S0.SS0.SSS1.p3.m2" class="ltx_Math" alttext="(I+O)^{-1}" display="inline"><msup><mrow><mo stretchy="false">(</mo><mrow><mi>I</mi><mo>+</mo><mi>O</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>, we obtain the desired formula:</p>
+<table id="S0.Ex11" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex11.m1" class="ltx_Math" alttext="(O+I)^{-1}(O-I)=A" display="block"><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>O</mi><mo>+</mo><mi>I</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>O</mi><mo>-</mo><mi>I</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>A</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="S0.SS0.SSS1.p4" class="ltx_para">
+<p class="ltx_p">Finally, one can show that, if <math id="S0.SS0.SSS1.p4.m1" class="ltx_Math" alttext="O" display="inline"><mi>O</mi></math> is orthogonal, then <math id="S0.SS0.SSS1.p4.m2" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> is skew-symmetric using the same sort of computation that was used to show the converse:</p>
+<table id="S0.Ex12" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex12.m1" class="ltx_Math" alttext="A^{T}=\left((O+I)^{-1}(O-I)\right)^{T}" display="block"><mrow><msup><mi>A</mi><mi>T</mi></msup><mo>=</mo><msup><mrow><mo>(</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>O</mi><mo>+</mo><mi>I</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>O</mi><mo>-</mo><mi>I</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>)</mo></mrow><mi>T</mi></msup></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Using the facts about transposes of sums, products, and inverses,</p>
+<table id="S0.Ex13" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex13.m1" class="ltx_Math" alttext="=(O^{T}-I^{T})(O^{T}+I^{T})^{-1}" display="block"><mrow><mi></mi><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>O</mi><mi>T</mi></msup><mo>-</mo><msup><mi>I</mi><mi>T</mi></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mi>O</mi><mi>T</mi></msup><mo>+</mo><msup><mi>I</mi><mi>T</mi></msup></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Since <math id="S0.SS0.SSS1.p4.m3" class="ltx_Math" alttext="O" display="inline"><mi>O</mi></math> is orthogonal, <math id="S0.SS0.SSS1.p4.m4" class="ltx_Math" alttext="O^{T}=O^{-1}" display="inline"><mrow><msup><mi>O</mi><mi>T</mi></msup><mo>=</mo><msup><mi>O</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></math>. As usual <math id="S0.SS0.SSS1.p4.m5" class="ltx_Math" alttext="I^{T}=I" display="inline"><mrow><msup><mi>I</mi><mi>T</mi></msup><mo>=</mo><mi>I</mi></mrow></math>.</p>
+<table id="S0.Ex14" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex14.m1" class="ltx_Math" alttext="=(O^{-1}-I)(O^{-1}+I)^{-1}" display="block"><mrow><mi></mi><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>O</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>-</mo><mi>I</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mi>O</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>+</mo><mi>I</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Insert an identity matrix between the two factors like so:</p>
+<table id="S0.Ex15" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex15.m1" class="ltx_Math" alttext="=(O^{-1}-I)I(O^{-1}+I)^{-1}" display="block"><mrow><mi></mi><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>O</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>-</mo><mi>I</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>I</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mi>O</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>+</mo><mi>I</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Replace the identity matrix with <math id="S0.SS0.SSS1.p4.m6" class="ltx_Math" alttext="OO^{-1}" display="inline"><mrow><mi>O</mi><mo>⁢</mo><msup><mi>O</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></math>:</p>
+<table id="S0.Ex16" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex16.m1" class="ltx_Math" alttext="=(O^{-1}-I)OO^{-1}(O^{-1}+I)^{-1}" display="block"><mrow><mi></mi><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>O</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>-</mo><mi>I</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>O</mi><mo>⁢</mo><msup><mi>O</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mi>O</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>+</mo><mi>I</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Absorbing the <math id="S0.SS0.SSS1.p4.m7" class="ltx_Math" alttext="O" display="inline"><mi>O</mi></math> and the <math id="S0.SS0.SSS1.p4.m8" class="ltx_Math" alttext="O^{-1}" display="inline"><msup><mi>O</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math> into the factors,</p>
+<table id="S0.Ex17" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex17.m1" class="ltx_Math" alttext="=(I-O)(I+O)^{-1}=-(O-I)(O+I)^{-1}." display="block"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>I</mi><mo>-</mo><mi>O</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>I</mi><mo>+</mo><mi>O</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><mo>=</mo><mrow><mo>-</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>O</mi><mo>-</mo><mi>I</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>O</mi><mo>+</mo><mi>I</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Since</p>
+<table id="S0.Ex18" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex18.m1" class="ltx_Math" alttext="O(O+I)^{-1}=((O+I)O^{T})^{-1}=(I+O^{T})^{-1}=(O^{T}(O+I))^{-1}=(O+I)^{-1}O," display="block"><mrow><mrow><mrow><mi>O</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>O</mi><mo>+</mo><mi>I</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>O</mi><mo>+</mo><mi>I</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>O</mi><mi>T</mi></msup></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>I</mi><mo>+</mo><msup><mi>O</mi><mi>T</mi></msup></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mi>O</mi><mi>T</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>O</mi><mo>+</mo><mi>I</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>O</mi><mo>+</mo><mi>I</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mi>O</mi></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p"><math id="S0.SS0.SSS1.p4.m9" class="ltx_Math" alttext="(O-I)" display="inline"><mrow><mo stretchy="false">(</mo><mrow><mi>O</mi><mo>-</mo><mi>I</mi></mrow><mo stretchy="false">)</mo></mrow></math> and <math id="S0.SS0.SSS1.p4.m10" class="ltx_Math" alttext="(O+I)^{-1}" display="inline"><msup><mrow><mo stretchy="false">(</mo><mrow><mi>O</mi><mo>+</mo><mi>I</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></math> commute, and consequently</p>
+<table id="S0.Ex19" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex19.m1" class="ltx_Math" alttext="=-(O+I)^{-1}(O-I)=-A." display="block"><mrow><mrow><mi></mi><mo>=</mo><mrow><mo>-</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>O</mi><mo>+</mo><mi>I</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>O</mi><mo>-</mo><mi>I</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mi>A</mi></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+</section>
+<section id="S0.SS0.SSS2" class="ltx_subsubsection">
+<h2 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">0.0.2 </span>Cayley Transform</h2>
+
+<div id="S0.SS0.SSS2.p1" class="ltx_para">
+<p class="ltx_p">The relation between <math id="S0.SS0.SSS2.p1.m1" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> and <math id="S0.SS0.SSS2.p1.m2" class="ltx_Math" alttext="O" display="inline"><mi>O</mi></math> which is set up by the formulas</p>
+<table id="S0.Ex20" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex20.m1" class="ltx_Math" alttext="O=(I+A)(I-A)^{-1}" display="block"><mrow><mi>O</mi><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>I</mi><mo>+</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>I</mi><mo>-</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">and</p>
+<table id="S0.Ex21" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex21.m1" class="ltx_Math" alttext="A=(O+I)^{-1}(O-I)" display="block"><mrow><mi>A</mi><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>O</mi><mo>+</mo><mi>I</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>O</mi><mo>-</mo><mi>I</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">is sometimes known as the <em class="ltx_emph ltx_font_italic">Cayley transform</em>. Note that the proof that these two formulas are each other’s inverses did not require <math id="S0.SS0.SSS2.p1.m3" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> to be skew-symmetric or <math id="S0.SS0.SSS2.p1.m4" class="ltx_Math" alttext="O" display="inline"><mi>O</mi></math> to be orthogonal. Hence, the Cayley transform is defined for all matrices such that <math id="S0.SS0.SSS2.p1.m5" class="ltx_Math" alttext="-1" display="inline"><mrow><mo>-</mo><mn>1</mn></mrow></math> is not an eigenvalue of <math id="S0.SS0.SSS2.p1.m6" class="ltx_Math" alttext="O" display="inline"><mi>O</mi></math>. (Recall that this condition is necessary to insure that <math id="S0.SS0.SSS2.p1.m7" class="ltx_Math" alttext="O+I" display="inline"><mrow><mi>O</mi><mo>+</mo><mi>I</mi></mrow></math> is invertible.</p>
+</div>
+</section>
+<section id="S0.SS0.SSS3" class="ltx_subsubsection">
+<h2 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">0.0.3 </span>Generalizations</h2>
+
+<div id="S0.SS0.SSS3.p1" class="ltx_para">
+<p class="ltx_p">The Cayley parameterization can be generalized to unitary transforms. Namely, if <math id="S0.SS0.SSS3.p1.m1" class="ltx_Math" alttext="U" display="inline"><mi>U</mi></math> is a unitary matrix, then <math id="S0.SS0.SSS3.p1.m2" class="ltx_Math" alttext="U" display="inline"><mi>U</mi></math> is the Cayley transform of a skew-Hermitean matrix <math id="S0.SS0.SSS3.p1.m3" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>. Since a skew-Hermitean matrix can be written as <math id="S0.SS0.SSS3.p1.m4" class="ltx_Math" alttext="i" display="inline"><mi>i</mi></math> times a Hermitean matrix, the Cayley transform is often written as follows when dealing with unitary matrices:</p>
+<table id="S0.Ex22" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex22.m1" class="ltx_Math" alttext="U=(iI+H)(iI-H)^{-1}" display="block"><mrow><mi>U</mi><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>i</mi><mo>⁢</mo><mi>I</mi></mrow><mo>+</mo><mi>H</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>i</mi><mo>⁢</mo><mi>I</mi></mrow><mo>-</mo><mi>H</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<table id="S0.Ex23" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex23.m1" class="ltx_Math" alttext="iH=(U+I)^{-1}(U-I)" display="block"><mrow><mrow><mi>i</mi><mo>⁢</mo><mi>H</mi></mrow><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>U</mi><mo>+</mo><mi>I</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>U</mi><mo>-</mo><mi>I</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="S0.SS0.SSS3.p1.m5" class="ltx_Math" alttext="H" display="inline"><mi>H</mi></math> is Hermitean. The proof in this case is substantially the same as was presented above; all one has to do is replace matrix transposition with Hermitean conjugation.</p>
+</div>
+<div id="S0.SS0.SSS3.p2" class="ltx_para">
+<p class="ltx_p">A special case of this worth pointing out is the case of one-dimensional unitary matrices. The sole entry of a one dimensional unitary matrix must have modulus 1 and the sole entry of a one-dimensional Hermitean matrix must be real. In that case, the Cayley transform reduces to</p>
+<table id="S0.Ex24" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex24.m1" class="ltx_Math" alttext="u={i+h\over i-h}" display="block"><mrow><mi>u</mi><mo>=</mo><mfrac><mrow><mi>i</mi><mo>+</mo><mi>h</mi></mrow><mrow><mi>i</mi><mo>-</mo><mi>h</mi></mrow></mfrac></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<table id="S0.Ex25" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex25.m1" class="ltx_Math" alttext="ih={u+i\over u-i}," display="block"><mrow><mrow><mrow><mi>i</mi><mo>⁢</mo><mi>h</mi></mrow><mo>=</mo><mfrac><mrow><mi>u</mi><mo>+</mo><mi>i</mi></mrow><mrow><mi>u</mi><mo>-</mo><mi>i</mi></mrow></mfrac></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">which is a fractional linear transform that maps the unit circle to the real axis.</p>
+</div>
+<div id="S0.SS0.SSS3.p3" class="ltx_para">
+<p class="ltx_p">The Cayley parameterization can be generalized to the case of a general inner product with arbitrary signature (see Sylvester’s law for the definition of signature — Cayley and Sylvester were the best of friends). We simply need to define the transpose of a matrix <math id="S0.SS0.SSS3.p3.m1" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> by the condition <math id="S0.SS0.SSS3.p3.m2" class="ltx_Math" alttext="(M^{T}u)\cdot v=u\cdot(Mv)" display="inline"><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>M</mi><mi>T</mi></msup><mo>⁢</mo><mi>u</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⋅</mo><mi>v</mi></mrow><mo>=</mo><mrow><mi>u</mi><mo>⋅</mo><mrow><mo stretchy="false">(</mo><mrow><mi>M</mi><mo>⁢</mo><mi>v</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math> for all vectors <math id="S0.SS0.SSS3.p3.m3" class="ltx_Math" alttext="u" display="inline"><mi>u</mi></math> and <math id="S0.SS0.SSS3.p3.m4" class="ltx_Math" alttext="v" display="inline"><mi>v</mi></math>. In particular, this allows one to parameterize pseudo-orthogonal matrices such as Lorentz transformations using a Cayley parameterization. Likewise, given a conjugate linear inner product on a complex vector space, one has a Cayley parameterization of the unitary (or pseudo-unitary) transforms which preserve the product.</p>
+</div>
+<div id="S0.SS0.SSS3.p4" class="ltx_para">
+<p class="ltx_p">In conclusion, it might be worth pointing out that the Cayley transform generalizes to the case of infinite dimensions, if one replaces matrices with operators on a Hilbert space. In particular, it is useful because unitary and orthogonal operators are bounded whereas Hermitean and skew-symmetric operators may or may not be bounded. For instance, it is often easier to obtain the spectral decomposition of a Hermitean operator or study symmetric extensions of a symmetric operator by first performing a Cayley transform and dealing with the resulting bounded operator.
+</p>
+<table class="ltx_tabular ltx_align_right ltx_guessed_headers ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_t">Title</th>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">Cayley’s parameterization of orthogonal matrices</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Canonical name</th>
+<td class="ltx_td ltx_align_left ltx_border_r">CayleysParameterizationOfOrthogonalMatrices</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Date of creation</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 14:51:38</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified on</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 14:51:38</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Owner</th>
+<td class="ltx_td ltx_align_left ltx_border_r">rspuzio (6075)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified by</th>
+<td class="ltx_td ltx_align_left ltx_border_r">rspuzio (6075)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Numerical id</th>
+<td class="ltx_td ltx_align_left ltx_border_r">20</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Author</th>
+<td class="ltx_td ltx_align_left ltx_border_r">rspuzio (6075)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Entry type</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Theorem</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 22E70</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 15A57</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_b ltx_border_l">Defines</th>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">Cayley transform</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb  9 19:40:21 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

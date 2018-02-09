@@ -1,0 +1,233 @@
+<!DOCTYPE html><html>
+<head>
+<title>topological group</title>
+<!--Generated on Fri Feb  9 19:39:17 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">topological group</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break"><span class="ltx_ERROR undefined">\PMlinkescapephrase</span>
+<p class="ltx_p">completely regular</p>
+</div>
+<section id="Sx1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">Definitions</h2>
+
+<div id="Sx1.p1" class="ltx_para">
+<p class="ltx_p">A <em class="ltx_emph ltx_font_italic">topological group</em> is a group <math id="Sx1.p1.m1" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> endowed with a topology
+such that the multiplication and inverse operations of <math id="Sx1.p1.m2" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>
+are continuous (<span class="ltx_text ltx_font_typewriter">http://planetmath.org/Continuous</span>).
+That is, the map <math id="Sx1.p1.m3" class="ltx_Math" alttext="G\times G\to G" display="inline"><mrow><mrow><mi>G</mi><mo>×</mo><mi>G</mi></mrow><mo>→</mo><mi>G</mi></mrow></math> defined by <math id="Sx1.p1.m4" class="ltx_Math" alttext="(x,y)\mapsto xy" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>↦</mo><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow></mrow></math> is continuous,
+where the topology on <math id="Sx1.p1.m5" class="ltx_Math" alttext="G\times G" display="inline"><mrow><mi>G</mi><mo>×</mo><mi>G</mi></mrow></math> is the product topology,
+and the map <math id="Sx1.p1.m6" class="ltx_Math" alttext="G\to G" display="inline"><mrow><mi>G</mi><mo>→</mo><mi>G</mi></mrow></math> defined by <math id="Sx1.p1.m7" class="ltx_Math" alttext="x\mapsto x^{-1}" display="inline"><mrow><mi>x</mi><mo>↦</mo><msup><mi>x</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></math> is also continuous.</p>
+</div>
+<div id="Sx1.p2" class="ltx_para">
+<p class="ltx_p">Many authors require the topology on <math id="Sx1.p2.m1" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> to be Hausdorff,
+which is equivalent to requiring that the trivial subgroup be a closed set.</p>
+</div>
+<div id="Sx1.p3" class="ltx_para">
+<p class="ltx_p">A topology on a group <math id="Sx1.p3.m1" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> that makes <math id="Sx1.p3.m2" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> into a topology group
+is called a <em class="ltx_emph ltx_font_italic">group topology</em> for <math id="Sx1.p3.m3" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>.</p>
+</div>
+</section>
+<section id="Sx2" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">Examples</h2>
+
+<div id="Sx2.p1" class="ltx_para">
+<p class="ltx_p">Any group becomes a topological group if it is given the discrete topology.</p>
+</div>
+<div id="Sx2.p2" class="ltx_para">
+<p class="ltx_p">Any group becomes a topological group if it is given the indiscrete topology.</p>
+</div>
+<div id="Sx2.p3" class="ltx_para">
+<p class="ltx_p">The real numbers with the standard topology form a topological group.
+More generally, an ordered group with its 
+is a topological group.</p>
+</div>
+<div id="Sx2.p4" class="ltx_para">
+<p class="ltx_p">Lie groups are topological groups with additional structure.</p>
+</div>
+<div id="Sx2.p5" class="ltx_para">
+<p class="ltx_p">Profinite groups are another important class of topological groups;
+they arise, for example, in infinite Galois theory.</p>
+</div>
+</section>
+<section id="Sx3" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">Subgroups, quotients and products</h2>
+
+<div id="Sx3.p1" class="ltx_para">
+<p class="ltx_p">Every subgroup (<span class="ltx_text ltx_font_typewriter">http://planetmath.org/Subgroup</span>) of a topological group
+either has empty interior or is clopen.
+In particular, all proper subgroups of a connected topological group
+have empty interior.
+The closure of any subgroup is also a subgroup,
+and the closure of a normal subgroup is normal
+(for proofs, see the entry
+“closure of sets closed under a finitary operation (<span class="ltx_text ltx_font_typewriter">http://planetmath.org/ClosureOfSetsClosedUnderAFinitaryOperation</span>)”).
+A subgroup of a topological group is itself a topological group,
+with the subspace topology.</p>
+</div>
+<div id="Sx3.p2" class="ltx_para">
+<p class="ltx_p">If <math id="Sx3.p2.m1" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> is a topological group and <math id="Sx3.p2.m2" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> is a normal subgroup of <math id="Sx3.p2.m3" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>,
+then the quotient group <math id="Sx3.p2.m4" class="ltx_Math" alttext="G/N" display="inline"><mrow><mi>G</mi><mo>/</mo><mi>N</mi></mrow></math> is also a topological group,
+with the quotient topology.
+This quotient <math id="Sx3.p2.m5" class="ltx_Math" alttext="G/N" display="inline"><mrow><mi>G</mi><mo>/</mo><mi>N</mi></mrow></math> is Hausdorff if and only if <math id="Sx3.p2.m6" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> is a closed subset of <math id="Sx3.p2.m7" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>.</p>
+</div>
+<div id="Sx3.p3" class="ltx_para">
+<p class="ltx_p">If <math id="Sx3.p3.m1" class="ltx_Math" alttext="(G_{i})_{i\in I}" display="inline"><msub><mrow><mo stretchy="false">(</mo><msub><mi>G</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>∈</mo><mi>I</mi></mrow></msub></math> is a family of topological groups,
+then the unrestricted direct product <math id="Sx3.p3.m2" class="ltx_Math" alttext="\prod_{i\in I}G_{i}" display="inline"><mrow><msub><mo largeop="true" symmetric="true">∏</mo><mrow><mi>i</mi><mo>∈</mo><mi>I</mi></mrow></msub><msub><mi>G</mi><mi>i</mi></msub></mrow></math>
+is also a topological group, with the product topology.</p>
+</div>
+</section>
+<section id="Sx4" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">Morphisms</h2>
+
+<div id="Sx4.p1" class="ltx_para">
+<p class="ltx_p">Let <math id="Sx4.p1.m1" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> and <math id="Sx4.p1.m2" class="ltx_Math" alttext="H" display="inline"><mi>H</mi></math> be topological groups, and let <math id="Sx4.p1.m3" class="ltx_Math" alttext="f\colon G\to H" display="inline"><mrow><mi>f</mi><mo>:</mo><mrow><mi>G</mi><mo>→</mo><mi>H</mi></mrow></mrow></math> be a function.
+</p>
+</div>
+<div id="Sx4.p2" class="ltx_para">
+<p class="ltx_p">The function <math id="Sx4.p2.m1" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> is said to be a <em class="ltx_emph ltx_font_italic">homomorphism of topological groups</em>
+if it is a group homomorphism and is also continuous.
+It is said to be an <em class="ltx_emph ltx_font_italic">isomorphism of topological groups</em>
+if it is both a group isomorphism and a homeomorphism.</p>
+</div>
+<div id="Sx4.p3" class="ltx_para">
+<p class="ltx_p">Note that it is possible for <math id="Sx4.p3.m1" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> to be a continuous group isomorphism
+(that is, a bijective homomorphism of topological groups)
+and yet not be an isomorphism of topological groups.
+This occurs, for example, if <math id="Sx4.p3.m2" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> is <math id="Sx4.p3.m3" class="ltx_Math" alttext="\mathbb{R}" display="inline"><mi>ℝ</mi></math> with the discrete topology,
+and <math id="Sx4.p3.m4" class="ltx_Math" alttext="H" display="inline"><mi>H</mi></math> is <math id="Sx4.p3.m5" class="ltx_Math" alttext="\mathbb{R}" display="inline"><mi>ℝ</mi></math> with its usual topology,
+and <math id="Sx4.p3.m6" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> is the identity map on <math id="Sx4.p3.m7" class="ltx_Math" alttext="\mathbb{R}" display="inline"><mi>ℝ</mi></math>.</p>
+</div>
+</section>
+<section id="Sx5" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">Topological properties</h2>
+
+<div id="Sx5.p1" class="ltx_para">
+<p class="ltx_p">While every group can be made into a topological group,
+the same cannot be said of every topological space.
+In this section we mention some of the properties
+that the underlying topological space must have.</p>
+</div>
+<div id="Sx5.p2" class="ltx_para">
+<p class="ltx_p">Every topological group is bihomogeneous
+and completely regular (<span class="ltx_text ltx_font_typewriter">http://planetmath.org/Tychonoff</span>).
+Note that our earlier claim that a topological group
+is Hausdorff if and only if its trivial subgroup is closed
+follows from this:
+if the trivial subgroup is closed,
+then homogeneity ensures that all singletons are closed,
+and so the space is <math id="Sx5.p2.m1" class="ltx_Math" alttext="\hbox{T}_{1}" display="inline"><msub><mtext>T</mtext><mn>1</mn></msub></math> (<span class="ltx_text ltx_font_typewriter">http://planetmath.org/T1Space</span>),
+and being completely regular is therefore Hausdorff.
+A topological group is not necessarily <span class="ltx_text ltx_font_typewriter">http://planetmath.org/node/1530</span>normal, however,
+a counterexample being the unrestricted direct product
+of uncountably many copies of the discrete group <math id="Sx5.p2.m2" class="ltx_Math" alttext="\mathbb{Z}" display="inline"><mi>ℤ</mi></math>.</p>
+</div>
+<div id="Sx5.p3" class="ltx_para">
+<p class="ltx_p">Every topological group is obviously an H-space.
+Consequently, the fundamental group of a topological group is abelian.
+Note that because topological groups are homogeneous,
+the fundamental group does not depend (up to isomorphism)
+on the choice of basepoint.</p>
+</div>
+<div id="Sx5.p4" class="ltx_para">
+<p class="ltx_p">Every locally compact topological group
+is <span class="ltx_text ltx_font_typewriter">http://planetmath.org/node/1530</span>normal and strongly paracompact.</p>
+</div>
+<div id="Sx5.p5" class="ltx_para">
+<p class="ltx_p">Every connected locally compact topological group is <math id="Sx5.p5.m1" class="ltx_Math" alttext="\sigma" display="inline"><mi>σ</mi></math>-compact.</p>
+</div>
+</section>
+<section id="Sx6" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">Other notes</h2>
+
+<div id="Sx6.p1" class="ltx_para">
+<p class="ltx_p">Every topological group possesses a natural uniformity,
+which induces the topology.
+See the entry about the uniformity of a topological group (<span class="ltx_text ltx_font_typewriter">http://planetmath.org/UniformStructureOfATopologicalGroup</span>).</p>
+</div>
+<div id="Sx6.p2" class="ltx_para">
+<p class="ltx_p">A locally compact topological group
+possesses a natural measure, called the Haar measure.
+</p>
+<table class="ltx_tabular ltx_align_right ltx_guessed_headers ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_t">Title</th>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">topological group</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Canonical name</th>
+<td class="ltx_td ltx_align_left ltx_border_r">TopologicalGroup</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Date of creation</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 15:47:09</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified on</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 15:47:09</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Owner</th>
+<td class="ltx_td ltx_align_left ltx_border_r">yark (2760)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified by</th>
+<td class="ltx_td ltx_align_left ltx_border_r">yark (2760)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Numerical id</th>
+<td class="ltx_td ltx_align_left ltx_border_r">29</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Author</th>
+<td class="ltx_td ltx_align_left ltx_border_r">yark (2760)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Entry type</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Definition</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 22A05</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Related topic</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Group</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Related topic</th>
+<td class="ltx_td ltx_align_left ltx_border_r">TopologicalSpace</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Defines</th>
+<td class="ltx_td ltx_align_left ltx_border_r">homomorphism of topological groups</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_b ltx_border_l">Defines</th>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">isomorphism of topological groups</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb  9 19:39:17 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>
